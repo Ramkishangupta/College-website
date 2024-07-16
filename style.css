@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assests/background_image.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+.navigation_div {
+    background-color: rgba(255, 255, 255, 0.115);
+    height: 60px;
+    width: 100%;
+    font-family: 'Rethink Sans', sans-serif;
+    color:white;   
+    padding-inline: 6%;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation_div img {
+    height: 50px;
+    width: 50px;
+}
+.navigation_div ul {
+    list-style: none;
+    display: flex;
+    padding-left: 50px;
+}
+
+.navigation_div ul li {
+    padding-left: 40px;
+}
+
+.navigation_div ul a {
+    color: white;
+    font-size: 15px;
+}
+
+.navigation_div ul li a {
+    text-decoration: none;
+}
+
+.navigation_div ul li:after {
+    content: '';
+    background: rgb(234, 97, 69);
+    height: 2px;
+    width: 0; /* Set initial width to 0 */
+    display: block;
+    margin: auto;
+    transition: width 0.6s ease-in-out; /* Correct syntax for transition property */
+}
+
+.navigation_div ul li:hover:after {
+    width: 100%; /* Expand the underline to 100% on hover */
+}
+.introduction_page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.introduction_page .first_text {
+    font-size: 62px;
+    font-weight: 700;
+    margin:12px 0 25px;   
+}
+.introduction_page .second_page{
+    font-size: 15px;
+}
+.introduction_page .click_btn {
+    display: inline-block;
+    margin-top: 40px; /* top/bottom margin 34px, left/right margin 40px */
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 2s;
+
+} 
+.introduction_page .click_btn:hover{
+    background: rgb(234, 97, 69);
+    border: 2px solid rgb(234, 97 ,69);
+}
+/* _________________________ courses_____________________________ */
+.section2{
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.courses_heding {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.intro {
+    font-size: 25x;
+    margin-bottom: 0px;
+}
+.section2 .courses-detail {
+    margin-top: 5%;
+    margin-inline: 3%;
+    display: flex;
+    gap: 2%;
+}
+
+.each_course{
+    margin: 9px;
+    padding-inline: 9px;
+    padding-block: 10px;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.each_course .cource_name{
+    margin-block: 10px;
+    font-size: 30px;
+    font-weight: 600
+} 
+.each_course:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,.2)
+}
+/* ________________________________ campus ________________________________ */
+.section3{
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.campus{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.campus_intro {
+    font-size: 25x;
+    margin-bottom: 0px;
+}
+.campus_images {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.campus_pic_det {
+    position: relative;  
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: background-color 0.5s ease; 
+}
+
+img {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.campus_pic_det:hover .text {
+    background-color: rgba(226,0,0,0.7); /* Change background color on hover */
+}
+.text p {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5;
+}
+.campus_pic_det:hover p{
+    opacity: 1;
+}
+/* _______________________ facilities _______________________ */
+.section4{
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.facilities{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.facilities_intro{
+    font-size: 25x;
+    margin-bottom: 0px;
+}
+.facilities_info {
+    font-size: 20px;
+    font-weight: 700;
+}
+.facilities_image{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.facilities_pic_det {
+    position: relative;
+}
+.facility_image {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+/* _____________________ testimonials ________________________ */
+.section5 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.student_reviews {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.reviews_intro{
+    font-size: 25x;
+    margin-bottom: 60px;
+}
+.reviews_by_student {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.review{
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    gap: 5px;
+    background-color: rgba(234, 97, 69, 0.766);
+}
+.review_desc{
+    font-size: 15px;
+    color: #fff;
+    font-size: small;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.star_img{
+    display: flex;
+}
+.student_name{
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+}
+.student_image {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.star_img {
+    padding-top: 10px;
+}
+.star_img i {
+    height: 40px;
+    width: 40px;
+}
+/* _________________________ contact us __________________________ */
+.contact_us{
+    margin-top: 70px;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(students/28466.jpg) ;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_intro{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact_us .click_btn {
+    display: inline-block;
+    margin-top: 40px; /* top/bottom margin 34px, left/right margin 40px */
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 2s;
+
+} 
+.contact_us .click_btn:hover{
+    background: rgb(234, 97, 69);
+    border: 2px solid rgb(234, 97 ,69);
+} 
+.About_Us_page{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(AboutUs/students-throw-up-graduation-caps-certificates.jpg) ;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;   
+}
+/* _______________________ media quary ________________________ */
+@media(max-width: 700px){
+    .introduction_page .first_text {
+        font-size:25px;
+        font-weight: 700;
+        margin-bottom:25px;   
+    }
+    .introduction_page .second_page{
+        font-size: 10px;
+    }
+    .navigation_div {
+        height: 50px;
+        width: 100%;
+    }
+    .navigation_div img {
+        height: 40px;
+        width: 40px;
+    }
+    .navigation_div ul li a {
+    font-size: 13px;
+    }
+    .section2 .courses-detail {
+        flex-direction: column;
+        gap: 2%;
+    }
+    .contact_intro{
+        font-size: 30px;
+    }
+    .courses_heding {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 70px 0 20px 0;
+    }
+    .intro {
+        font-size: 25x;
+        margin-bottom: 0px;
+        color: rgb(75, 75, 75);
+    }
+    .each_course .cource_name{
+        color: #000;
+        margin-block: 10px;
+        font-size: 30px;
+        font-weight: 300
+    } 
+    .section2 .courses-detail {
+        color: rgb(75, 75, 75);
+    }
+} 
+@media(max-width: 515px){
+    .navigation_div ul li {
+        padding-left: 25px;
+    } 
+    .navigation_div ul li a {
+        font-size: 10px;
+    }
+    .contact_intro{
+        font-size: 23px;
+    }
+}
+@media(max-width: 413px){
+    .navigation_div ul li {
+        padding-left: 19px;
+    } 
+    .navigation_div ul li a {
+        font-size: 10px;
+    }
+}
